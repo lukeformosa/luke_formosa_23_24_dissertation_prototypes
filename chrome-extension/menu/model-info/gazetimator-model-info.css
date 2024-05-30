@@ -1,0 +1,253 @@
+.gazetimator-model-info-menu-wrapper {
+    font-family: 'Dosis', sans-serif;
+    background-color: rgba(0,0,0, 0.85);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+}
+
+.gazetimator-model-info-menu-container {
+    position: relative;
+    border-radius: 0.25rem;
+    width: 700px;
+    aspect-ratio: 16/9;
+    background-image: url("https://github.com/lukeformosa/gazetimator-images/blob/main/images/menu/model-info-bg.png?raw=true");
+    background-size: cover;
+    border: 2px solid rgb(140, 138, 138);
+    overflow-x: hidden;
+}
+
+.gazetimator-model-info-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.gazetimator-model-info-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    height: 15%;
+}
+
+.gazetimator-model-info-back-button-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.gazetimator-model-info-back-button {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    margin-left: 1.5rem;
+    margin-bottom: 3px;
+    background-color: rgb(50, 50, 50);
+    transition-duration: 0.2s;
+}
+
+.gazetimator-model-info-back-button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.gazetimator-model-info-back-button-img {
+    background-image: url("https://github.com/lukeformosa/gazetimator-images/blob/main/images/menu/left-arrow.png?raw=true");
+    background-size: cover;
+    height: 90%;
+    aspect-ratio: 1/1;
+}
+
+.gazetimator-model-info-back-button-text {
+    margin-top: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-right: 12px;
+}
+
+.gazetimator-model-info-title-container p {
+    width: 40%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+.gazetimator-model-info-top-right-menu-controls-container {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gazetimator-model-info-middle-container {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.gazetimator-model-info-middle-dashboard {
+    border: 0.5px solid white;
+    background-color: rgba(43, 43, 43, 0.475);
+    border-radius: 0.25rem;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.gazetimator-model-info-middle-dashboard-left {
+    width:50%;
+    height: 100%;
+    border-right: 0.25px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gazetimator-model-info-middle-dashboard-left-inner {
+    width: 80%;
+    height: 80%;
+}
+
+.gazetimator-model-info-middle-dashboard-left-inner-row {
+    border-bottom: 0.5px solid white;
+    height: 12.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 0.7cqw;
+    transition-duration: 0.2s;
+}
+
+.gazetimator-model-info-middle-dashboard-left-inner-row:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: default;
+}
+
+.gazetimator-model-info-middle-dashboard-left-inner-row-left {
+    flex: 1 0 auto;
+    height: 100%;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gazetimator-model-info-middle-dashboard-left-inner-row-right {
+    flex: 1 0 auto;
+    margin-right: 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gazetimator-model-info-middle-dashboard-right {
+    width: 50%;
+    height: 100%;
+    border-left: 0.25px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.gazetimator-model-info-middle-dashboard-right-top {
+    width: 100%;
+    height: 50%;
+    border-bottom: 0.25px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+.gazetimator-model-info-middle-dashboard-right-top:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: default;
+}
+
+.gazetimator-model-info-middle-dashboard-right-top p {
+    font-size: 1.6cqw;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+
+.gazetimator-model-info-middle-dashboard-right-bottom {
+    width: 100%;
+    height: 50%;
+    border-top: 0.25px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+.gazetimator-model-info-middle-dashboard-right-bottom:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: default;
+}
+
+.gazetimator-model-info-middle-dashboard-right-bottom p {
+    font-size: 1.6cqw;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+
+.gazetimator-model-info-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.gazetimator-model-info-footer-container p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 10 10 10 10 black;
+    font-size: 12px;
+    cursor: default;
+}

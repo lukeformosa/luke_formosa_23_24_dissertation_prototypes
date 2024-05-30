@@ -1,0 +1,41 @@
+Accuracy,Regression Type,Room Lighting,Ring Light,Natural Lighting,Number of Calibration Clicks
+95.68318201,ridge,No Lighting,TRUE,FALSE,28
+93.21575526,weightedRidge,No Lighting,TRUE,FALSE,30
+93.10862921,ridge,White Light Directly Above,TRUE,FALSE,30
+92.27075569,ridge,No Lighting,TRUE,FALSE,28
+91.58012408,weightedRidge,White Light Directly Above,TRUE,FALSE,29
+91.20029753,ridge,No Lighting,TRUE,FALSE,29
+91.09402002,ridge,White Light Directly Above,TRUE,FALSE,30
+89.76797237,weightedRidge,No Lighting,TRUE,FALSE,28
+89.49168468,weightedRidge,White Light Directly Above,FALSE,FALSE,29
+89.20619489,weightedRidge,White Light Directly Above,FALSE,FALSE,28
+89.0748494,weightedRidge,No Lighting,FALSE,FALSE,28
+88.56824461,weightedRidge,White Light Directly Above,FALSE,FALSE,30
+88.1468222,weightedRidge,No Lighting,TRUE,FALSE,29
+87.76172548,ridge,White Light Directly Above,FALSE,FALSE,28
+87.45705098,weightedRidge,White Light Directly Above,FALSE,FALSE,30
+87.25982091,ridge,White Light Directly Above,FALSE,FALSE,28
+86.50409902,ridge,White Light Directly Above,TRUE,FALSE,28
+86.31136483,ridge,White Light Directly Above,FALSE,FALSE,28
+86.07190947,weightedRidge,White Light Directly Above,TRUE,FALSE,28
+85.7800688,weightedRidge,No Lighting,FALSE,FALSE,28
+85.33185534,ridge,White Light Directly Above,TRUE,FALSE,29
+85.27927619,ridge,No Lighting,FALSE,FALSE,28
+84.92685642,weightedRidge,No Lighting,FALSE,FALSE,28
+83.97825934,weightedRidge,No Lighting,TRUE,FALSE,28
+83.46467015,ridge,No Lighting,TRUE,FALSE,28
+81.70123848,weightedRidge,White Light Directly Above,TRUE,FALSE,29
+80.89560677,ridge,No Lighting,FALSE,FALSE,28
+80.32776831,weightedRidge,White Light Directly Above,TRUE,FALSE,29
+80.11224397,weightedRidge,White Light Directly Above,FALSE,FALSE,28
+79.07047761,ridge,White Light Directly Above,TRUE,FALSE,28
+78.57462153,ridge,White Light Directly Above,FALSE,FALSE,28
+78.25990819,weightedRidge,No Lighting,FALSE,FALSE,28
+78.24737413,ridge,No Lighting,TRUE,FALSE,28
+77.80173507,ridge,No Lighting,FALSE,FALSE,28
+75.90809806,weightedRidge,No Lighting,FALSE,FALSE,29
+73.58999737,weightedRidge,No Lighting,TRUE,FALSE,30
+70.79913309,ridge,No Lighting,FALSE,FALSE,30
+70.63138925,ridge,No Lighting,FALSE,FALSE,29
+69.7234126,ridge,White Light Directly Above,FALSE,FALSE,29
+65.86550826,weightedRidge,White Light Directly Above,TRUE,FALSE,28

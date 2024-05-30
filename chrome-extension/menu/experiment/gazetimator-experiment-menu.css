@@ -1,0 +1,232 @@
+.gazetimator-experiment-menu-wrapper {
+    font-family: 'Dosis', sans-serif;
+    background-color: rgba(0,0,0, 0.85);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+}
+
+.gazetimator-experiment-menu-container {
+    position: relative;
+    border-radius: 0.25rem;
+    width: 700px;
+    aspect-ratio: 16/9;
+    background-image: url("https://github.com/lukeformosa/gazetimator-images/blob/main/images/menu/start-experiment-bg.png?raw=true");
+    background-size: cover;
+    border: 2px solid rgb(140, 138, 138);
+    overflow-x: hidden;
+}
+
+.gazetimator-experiment-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15%;
+}
+
+.gazetimator-experiment-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    height: 15%;
+}
+
+.gazetimator-experiment-back-button-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.gazetimator-experiment-back-button {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    margin-left: 1.5rem;
+    margin-bottom: 3px;
+    background-color: rgb(50, 50, 50);
+    transition-duration: 0.2s;
+}
+
+.gazetimator-experiment-back-button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.gazetimator-experiment-back-button-img {
+    background-image: url("https://github.com/lukeformosa/gazetimator-images/blob/main/images/menu/left-arrow.png?raw=true");
+    background-size: cover;
+    height: 90%;
+    aspect-ratio: 1/1;
+}
+
+.gazetimator-experiment-back-button-text {
+    margin-top: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-right: 12px;
+}
+
+.gazetimator-experiment-title-container p {
+    width: 40%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+.gazetimator-experiment-top-right-menu-controls-container {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gazetimator-experiment-middle-container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.gazetimator-experiment-middle-top-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gazetimator-experiment-middle-top-container input {
+    all: unset;
+    width: 5rem;
+    aspect-ratio: 21/4;
+    background-color: rgba(255,255,255, 0.8);
+    border: 1px solid black;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: bold;
+    caret-color: rgba(0,0,0,0);
+}
+
+.gazetimator-experiment-middle-top-container input:focus{
+    outline: 2px solid #0095c3;
+}
+
+.gazetimator-experiment-middle-top-container button {
+    all: unset;
+    width: 7rem;
+    aspect-ratio: 21/4;
+    background-color: #0095c3;
+    border: 1px solid white;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.gazetimator-experiment-middle-bottom-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gazetimator-experiment-start-button-container {
+    width: 90%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.475);
+    border: 0.5px solid rgb(99, 99, 99);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 1rem;
+    padding: 0 0.6rem 0;
+    transition-duration: 0.2s;
+}
+
+.gazetimator-experiment-start-button-container:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: default;
+}
+
+.gazetimator-experiment-start-button-image-container {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gazetimator-experiment-start-button-image-container img {
+    aspect-ratio: 1/1;
+    height: 80%;
+}
+
+.gazetimator-experiment-start-button-text-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gazetimator-experiment-start-button-text-container h2 { 
+    letter-spacing: 1px;
+}
+
+.gazetimator-experiment-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.gazetimator-experiment-footer-container p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 10 10 10 10 black;
+    font-size: 12px;
+    cursor: default;
+}

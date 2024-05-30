@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "Gazetimator - Realtime Eye-Tracker",
+    "description": "This is an experimental extension used for a dissertation study by Luke Formosa. University: MCAST",
+    "version": "1.7",
+    "icons": {
+        "16": "logo-new.png",
+        "48": "logo-new.png",
+        "128": "logo-new.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "lib/gazetimator-localforage.min.js",
+                "contentScript.js"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "https://generate-visualizations.azurewebsites.net/api/Generate",
+        "http://localhost:7071/api/Generate"
+    ],
+    "permissions": [
+        "storage",
+        "tabs",
+        "webRequest",
+        "management",
+        "webNavigation",
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["lib/*", "menu/*", "menu/*/*", "global/*"],
+            "matches": ["*://*/*"]
+        }
+    ]
+}

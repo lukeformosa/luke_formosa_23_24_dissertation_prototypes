@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --middle-horizontal: calc(50vw - 17.5px);
+    --middle-vertical: calc(50vh - 17.5px);
+    --clicked-once-color: #3b66dd;
+    --clicked-twice-color: #586da8;
+    --clicked-three-color: #c3cade;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gazetimator-calibration-container {
+    z-index: 99998;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 90%;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.gazetimator-dot {
+    z-index: 100000;
+    aspect-ratio: 1/1;
+    width: 2rem;
+    background-color: #162df6;
+    border: 1.5px solid rgb(0, 72, 255);
+    position: fixed;
+    border-radius: 50%;
+}
+
+.gazetimator-dot:hover {
+    cursor: pointer;
+}
+
+#gazetimator-d1,
+#gazetimator-d2,
+#gazetimator-d3 {
+    top: 2vh;
+}
+
+#gazetimator-d4,
+#gazetimator-d5,
+#gazetimator-d6 {
+    top: var(--middle-vertical);
+}
+
+#gazetimator-d7,
+#gazetimator-d8,
+#gazetimator-d9 {
+    bottom: 2vh;
+}
+
+#gazetimator-d1 {
+    left: 19vw;
+
+}
+
+#gazetimator-d4,
+#gazetimator-d7 {
+    left: 2vw;
+}
+
+#gazetimator-d2,
+#gazetimator-d5,
+#gazetimator-d8 {
+    left: var(--middle-horizontal);
+}
+
+#gazetimator-d3,
+#gazetimator-d6,
+#gazetimator-d9 {
+    right: 2vw;
+}
+
+.gazetimator-clicked-once {
+    background-color: var(--clicked-once-color);
+}
+
+.gazetimator-clicked-twice {
+    background-color: var(--clicked-twice-color);
+}
+
+.gazetimator-clicked-three-times {
+    opacity: 0;
+}
+
+.gazetimator-clicked-three-times:hover {
+    cursor: default;
+}
+
+.gazetimator-alert-container {
+    font-family: 'Dosis', sans-serif;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    bottom: -10rem;
+    transition-duration: 0.3s;
+    z-index: 9999999999;
+}
+
+.gazetimator-alert-container p {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0 3rem 0;
+    color: white;
+}
+
+.gazetimator-show {
+    bottom: 3rem;
+}
+
+.gazetimator-alert-success {
+    background-color: rgb(59, 126, 59);
+}
+
+.gazetimator-alert-error {
+    background-color: rgb(200, 77, 77);
+}
+
+#gazetimator-info-start-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.gazetimator-countdown-wrapper {
+    font-family: 'Dosis', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+}
+
+.gazetimator-countdown-wrapper p {
+    font-size: 16rem;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#gazetimator-loader-elem-exp-ongoing {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: gazetimator-spin 2s linear infinite;
+}
+
+@keyframes gazetimator-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

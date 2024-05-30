@@ -1,0 +1,242 @@
+.gazetimator-experiments-data-wrapper {
+    font-family: 'Dosis', sans-serif;
+    background-color: rgba(0,0,0, 0.85);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    z-index: -1;
+}
+
+.gazetimator-experiments-data-menu-container {
+    position: relative;
+    border-radius: 0.25rem;
+    width: 700px;
+    aspect-ratio: 16/9;
+    background-image: url("https://github.com/lukeformosa/gazetimator-images/blob/main/images/menu/model-info-bg.png?raw=true");
+    background-size: cover;
+    border: 2px solid rgb(140, 138, 138);
+    overflow-x: hidden;
+}
+
+.gazetimator-experiments-data-main-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.gazetimator-experiments-data-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.gazetimator-experiment-data-back-button-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.gazetimator-experiment-data-back-button {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 80%;
+    margin-left: 1.5rem;
+    margin-bottom: 3px;
+    background-color: rgb(50, 50, 50);
+    transition-duration: 0.2s;
+}
+
+.gazetimator-experiment-data-back-button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.gazetimator-experiment-data-back-button-img {
+    background-image: url("https://github.com/lukeformosa/gazetimator-images/blob/main/images/menu/left-arrow.png?raw=true");
+    background-size: cover;
+    height: 90%;
+    aspect-ratio: 1/1;
+}
+
+.gazetimator-experiment-data-back-button-text {
+    margin-top: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-right: 12px;
+}
+
+.gazetimator-experiments-data-title-container p {
+    width: 60%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    cursor: default;
+    padding-top: 0.8rem;
+}
+
+.gazetimator-experiment-data-top-right-menu-controls-container {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gazetimator-experiment-data-middle-container {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.gazetimator-experiment-data-middle-dashboard {
+    border: 0.5px solid white;
+    background-color: rgba(43, 43, 43, 0.475);
+    border-radius: 0.25rem;
+    height: 100%;
+    width: 90%;
+    overflow: hidden;
+}
+
+.gazetimator-experiment-data-middle-dashboard ul {
+    all: unset;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    overflow: scroll;
+}
+
+.gazetimator-experiment-data-entry{
+    width: 97.5%;
+    border: 0.5px solid white;
+    border-radius: 0.25rem;
+    background-color: rgba(43, 43, 43, 1);
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.gazetimator-experiment-data-entry-date-and-time {
+    padding-left: 0.5rem;
+}
+
+.gazetimator-experiment-data-entry-text {
+    padding-right: 0.5rem;
+}
+
+.gazetimator-experiment-data-entry:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: pointer; 
+}
+
+.gazetimator-experiment-data-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.gazetimator-experiment-data-footer-container p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 10 10 10 10 black;
+    font-size: 12px;
+    cursor: default;
+}
+
+.gazetimator-experiment-data-loading-container {
+    background-color: rgba(0, 0, 0, 0.90);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.gazetimator-experiment-data-loading-circle {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: gazetimator-spin 2s linear infinite;
+}
+
+.gazetimator-experiment-data-loading-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gazetimator-experiment-data-loading-dots div {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: gazetimator-experiment-data-loading-jump-anim 0.6s infinite;
+}
+
+.gazetimator-experiment-data-loading-dots div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.gazetimator-experiment-data-loading-dots div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.gazetimator-experiment-data-loading-dots div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+  
+@keyframes gazetimator-experiment-data-loading-jump-anim {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
