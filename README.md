@@ -5,6 +5,8 @@
 ## Contents:
 ### Chrome Extension (Main Prototype)
 ### Data Visualisation & Analysis Python Scripts
+### Visualisations and Performance Tables
+### All Raw Data Collected in JSON Format
 
 ### Additional Information for Further Use:
 The chrome extension has two modes, simple and advanced.
